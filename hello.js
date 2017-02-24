@@ -1,9 +1,9 @@
-var http = require(‘http’);
-var fs = require(‘fs’);
+var http = require('http');
+var fs = require('fs');
 
 var servidor = http.createServer(
     function(request, response){
-        response.writeHead(200,{“Context-Type”:"application/json"});
+        response.writeHead(200,{"Context-Type":"application/json"});
         	response.write(
             JSON.stringify(
                             {
