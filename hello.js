@@ -1,19 +1,18 @@
-var http = require('http');
-var fileSystem = require('fs');
+var http = require(‘http’);
+var fs = require(‘fs’);
 
-
-fileSystem.readFile('./index.html',
-	(err,data)=>{
-		if(err){console.log(err);}
-		var server = http.createServer(
-			(req,res)=>
-			{
-				console.log("creating Server");
-				res.write(data);
-				res.end('Hola');
-			}
-		);
-		server.listen('9000');
-	}
+var servidor = http.createServer(
+    function(request, response){
+        response.writeHead(200,{“Context-Type”:"application/json"});
+        	response.write(
+            JSON.stringify(
+                            {
+                                   nombre:"Alejandro",
+                                   apellido:"Zarate"
+                            }
+                        );
+         );
+         response(end);
+     }
 );
-
+servidor.listen(9000);
