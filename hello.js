@@ -1,7 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 
-fs.readFile('./index.html',);
+fs.readFile('./index.html',dataRead);
 
 var dataRead = function(err,file){
 	if(err){console.log(err);}
