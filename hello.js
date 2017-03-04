@@ -9,6 +9,12 @@ var servidor = http.createServer(function(request, response){
 			else{
 				response.writeHead(200,{"Context-Type":"application/json"});
 				response.write(file);
+				var i = 0;
+				while(true){
+					response.write(i);
+					i++;
+				}
+
 				response.end();
 			}
 	});
