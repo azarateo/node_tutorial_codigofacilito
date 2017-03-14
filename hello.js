@@ -4,16 +4,11 @@ var fs = require('fs');
 
 
 var servidor = http.createServer(function(request, response){
-	fs.readFile("./index.html",(err,file)=>{
+	fs.readFile("./index.html",function(err,file){
 			if(err){console.log(err);}
 			else{
 				response.writeHead(200,{"Context-Type":"application/json"});
-				var i = 0;
-				while(true){
-					response.write(i+"");
-					i++;
-				}
-
+				response.write(file);
 				response.end();
 			}
 	});
