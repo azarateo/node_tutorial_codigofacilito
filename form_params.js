@@ -16,7 +16,7 @@ http.createServer(
     				console.log(miVariable);
     				html_string = html_string.replace("{"+variables[i]+"}",miVariable);
     			}
-
+				console.log("The process number:"+process.id);
 
             	res.writeHead(200,{"Content-Type":"text/html"});
             	res.write(html_string);
