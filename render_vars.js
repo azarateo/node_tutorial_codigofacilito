@@ -9,10 +9,12 @@ http.createServer(
     			var nombre = 'Alejo';
     			//The regular expression means a text that is not one or more { or }
     			//and that searching ahead finds }
-
-    			for (var i = variables.length - 1; i >= 0; i--) {
+    			console.log(variables.length);
+    			for (var i = variables.length - 1; i >=	 0; i--) {
     				var miVariable = eval(variables[i]);
-    				html_string.replace("{"+variables[i]+"}",miVariable);
+    				console.log(variables[i]);
+    				console.log(miVariable);
+    				html_string = html_string.replace("{"+variables[i]+"}",miVariable);
     			}
 
 
