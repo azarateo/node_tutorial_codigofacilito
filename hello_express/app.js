@@ -1,11 +1,12 @@
 var express = require('express');
 var app = express();
 
+app.set("view engine","jade");	
 app.get("/",function(req,res) {
-	res.send("Hello express");
+	res.render("index");
 });
 
 
 app.listen(8080);
 
-//This is the end of video 9
+//Video 10 using Jade
