@@ -1,0 +1,14 @@
+{
+  "name": "hello_express",
+  "version": "1.0.0",
+  "description": "CodigoFacilito",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eazarateo.net",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
