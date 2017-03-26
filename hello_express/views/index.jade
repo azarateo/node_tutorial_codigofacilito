@@ -3,8 +3,13 @@ html
 	title Pagina con Jade
 	body
 		- var array = [1,2,3,4,5];
-		- for (var i = array.length - 1; i >= 0; i--)
+		- each item in array
+			if true
 			p.
-				Ejemplo de interpolacion de etiquetas. Haga clic en el #[a(href="www.google.com") link] por favor
+				Ejemplo de interpolacion de etiquetas #{item}. Haga clic en el #[a(href="www.google.com") link] por favor
+			p= item
+			p item y otras cositas mas
+			p #{item} y otras cositas mas
+			// este genera error: p= item y otras cositas mas
 		
-//Ejemplo de interpolacion de etiquetas. SI NO SE PONE PUNTO despues de la P lo toma como etiqueta. (p.)
+//Ejemplo if ni each necesitan parentesis y ejemplos de interpolacion en Jade
