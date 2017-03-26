@@ -4,7 +4,7 @@ html
 	body
 		- var array = [1,2,3,4,5];
 		- for (var i = array.length - 1; i >= 0; i--)
-			p 
-			h1 Ejemplo de interpolacion #{array[i]}
+			p.
+				Ejemplo de interpolacion de etiquetas. Haga clic en el #[a(href="www.google.com") link] por favor
 		
-//Ejemplo de interpolacion
+//Ejemplo de interpolacion de etiquetas. SI NO SE PONE PUNTO despues de la P lo toma como etiqueta. (p.)
