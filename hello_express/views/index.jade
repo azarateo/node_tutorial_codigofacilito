@@ -4,12 +4,12 @@ html
 	body
 		- var array = [1,2,3,4,5];
 		- each item in array
-			if true
-			p.
-				Ejemplo de interpolacion de etiquetas #{item}. Haga clic en el #[a(href="www.google.com") link] por favor
-			p= item
-			p item y otras cositas mas
-			p #{item} y otras cositas mas
-			// este genera error: p= item y otras cositas mas
+			case item
+				when 1
+					p el item era el primero. #{item}
+				when 2
+					p el item era el segundo. #{item}
+				default
+					p el item no era ni el uno ni el dos. #{item}
 		
-//Ejemplo if ni each necesitan parentesis y ejemplos de interpolacion en Jade
+//Ejemplo case
