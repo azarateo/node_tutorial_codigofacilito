@@ -3,7 +3,8 @@ html
 	title Pagina con Jade
 	body
 		- var array = [1,2,3,4,5];
-		- for (var i = array.length - 1; i >= 0; i--) 
-			p!= "<h2>"+array[i]+"</h2>"
+		- for (var i = array.length - 1; i >= 0; i--)
+			p 
+			h1 Ejemplo de interpolacion #{array[i]}
 		
-//Ejecuta el html por utilizar el !
+//Ejemplo de interpolacion
