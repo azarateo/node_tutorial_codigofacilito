@@ -1,3 +1,3 @@
-./idea/*.xml
-./hello_express/node_modules
-./routing/node_modules
+/idea/*.xml
+/hello_express/node_modules
+/routing/node_modules
