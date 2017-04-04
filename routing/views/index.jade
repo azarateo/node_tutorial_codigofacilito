@@ -2,6 +2,7 @@ doctype html
 html
 	title hello
 	body
+		h1!= variable
 		form(action="/", method="POST")
-			p You used a GET method in / and you obtained a button to send a post request
+			p You used a GET method in / and you obtained a button to send a post request #{variable}
 			input(type="submit",value="enviar")
