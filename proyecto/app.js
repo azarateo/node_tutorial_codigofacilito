@@ -1,6 +1,9 @@
 var express = require("express");
 var app = express();
 
+//built in middle ware to serve static files
+app.use(express.static('public'));
+
 app.set("view engine","jade");
 
 app.get('/',function(req,res) {
@@ -12,3 +15,4 @@ app.get('/login',function(req,res) {
 });
 
 app.listen(8080);
+//video 15
